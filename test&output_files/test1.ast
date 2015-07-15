@@ -1,0 +1,25 @@
+ROOT "" 0.0.00 
+|     FUNCTION "" 4.25.00  function
+|     |     INT "int" 4.25.00  int
+|     |     |     DECLID "func" 4.25.04  int function
+|     |     PARAMLIST "(" 4.25.09 
+|     |     |     INT "int" 4.25.10  int
+|     |     |     |     DECLID "a" 4.25.14  int variable param lval
+|     |     |     INT "int" 4.25.17  int
+|     |     |     |     DECLID "b" 4.25.21  int variable param lval
+|     |     BLOCK "{" 4.25.23 
+|     |     |     '=' "=" 4.26.01  vreg
+|     |     |     |     IDENT "a" 4.26.00  variable lval
+|     |     |     |     INTCON "1" 4.26.02  int const
+|     |     |     '=' "=" 4.27.01  vreg
+|     |     |     |     IDENT "b" 4.27.00  variable lval
+|     |     |     |     INTCON "2" 4.27.02  int const
+|     |     |     '=' "=" 4.28.01  vreg
+|     |     |     |     IDENT "a" 4.28.00  variable lval
+|     |     |     |     '+' "+" 4.28.05 
+|     |     |     |     |     '+' "+" 4.28.03 
+|     |     |     |     |     |     IDENT "c" 4.28.02  variable lval
+|     |     |     |     |     |     IDENT "b" 4.28.04  variable lval
+|     |     |     |     |     INTCON "2" 4.28.06  int const
+|     |     |     RETURN "return" 4.29.00 
+|     |     |     |     IDENT "a" 4.29.07 

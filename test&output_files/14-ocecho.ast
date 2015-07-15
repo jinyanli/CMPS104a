@@ -1,0 +1,98 @@
+ROOT "" 0.0.00 
+|     PROTOTYPE "" 5.23.00  
+|     |     VOID "void" 5.23.00  void
+|     |     |     DECLID "__assert_fail" 5.23.05  void function 
+|     |     PARAMLIST "(" 5.23.19 
+|     |     |     STRING "string" 5.23.20  string
+|     |     |     |     DECLID "expr" 5.23.27  string variable param lval
+|     |     |     STRING "string" 5.23.33  string
+|     |     |     |     DECLID "file" 5.23.40  string variable param lval
+|     |     |     INT "int" 5.23.46  int
+|     |     |     |     DECLID "line" 5.23.50  int variable param lval
+|     PROTOTYPE "" 5.24.00  
+|     |     VOID "void" 5.24.00  void
+|     |     |     DECLID "putb" 5.24.05  void function 
+|     |     PARAMLIST "(" 5.24.10 
+|     |     |     BOOL "bool" 5.24.11  bool
+|     |     |     |     DECLID "b" 5.24.16  bool variable param lval
+|     PROTOTYPE "" 5.25.00  
+|     |     VOID "void" 5.25.00  void
+|     |     |     DECLID "putc" 5.25.05  void function 
+|     |     PARAMLIST "(" 5.25.10 
+|     |     |     CHAR "char" 5.25.11  char
+|     |     |     |     DECLID "c" 5.25.16  char variable param lval
+|     PROTOTYPE "" 5.26.00  
+|     |     VOID "void" 5.26.00  void
+|     |     |     DECLID "puti" 5.26.05  void function 
+|     |     PARAMLIST "(" 5.26.10 
+|     |     |     INT "int" 5.26.11  int
+|     |     |     |     DECLID "i" 5.26.15  int variable param lval
+|     PROTOTYPE "" 5.27.00  
+|     |     VOID "void" 5.27.00  void
+|     |     |     DECLID "puts" 5.27.05  void function 
+|     |     PARAMLIST "(" 5.27.10 
+|     |     |     STRING "string" 5.27.11  string
+|     |     |     |     DECLID "s" 5.27.18  string variable param lval
+|     PROTOTYPE "" 5.28.00  
+|     |     VOID "void" 5.28.00  void
+|     |     |     DECLID "endl" 5.28.05  void function 
+|     |     PARAMLIST "(" 5.28.10 
+|     PROTOTYPE "" 5.29.00  
+|     |     INT "int" 5.29.00  int
+|     |     |     DECLID "getc" 5.29.04  int function 
+|     |     PARAMLIST "(" 5.29.09 
+|     PROTOTYPE "" 5.30.00  
+|     |     STRING "string" 5.30.00  string
+|     |     |     DECLID "getw" 5.30.07  string function 
+|     |     PARAMLIST "(" 5.30.12 
+|     PROTOTYPE "" 5.31.00  
+|     |     STRING "string" 5.31.00  string
+|     |     |     DECLID "getln" 5.31.07  string function 
+|     |     PARAMLIST "(" 5.31.13 
+|     PROTOTYPE "" 5.32.06  
+|     |     ARRAY "[]" 5.32.06 
+|     |     |     STRING "string" 5.32.00  string 
+|     |     |     DECLID "getargv" 5.32.09  string function
+|     |     PARAMLIST "(" 5.32.17 
+|     PROTOTYPE "" 5.33.00  
+|     |     VOID "void" 5.33.00  void
+|     |     |     DECLID "exit" 5.33.05  void function 
+|     |     PARAMLIST "(" 5.33.10 
+|     |     |     INT "int" 5.33.11  int
+|     |     |     |     DECLID "status" 5.33.15  int variable param lval
+|     VARDECL "=" 6.5.14  variable lval
+|     |     ARRAY "[]" 6.5.06 
+|     |     |     STRING "string" 6.5.00  string
+|     |     |     DECLID "argv" 6.5.09 
+|     |     CALL "(" 6.5.24 
+|     |     |     IDENT "getargv" 6.5.16 
+|     VARDECL "=" 6.6.09  variable lval
+|     |     INT "int" 6.6.00  int
+|     |     |     DECLID "argi" 6.6.04 
+|     |     INTCON "1" 6.6.11 
+|     WHILE "while" 6.7.00 
+|     |     NE "!=" 6.7.18  bool vreg
+|     |     |     INDEX "[" 6.7.11 
+|     |     |     |     IDENT "argv" 6.7.07 
+|     |     |     |     IDENT "argi" 6.7.12 
+|     |     |     NULL "null" 6.7.21 
+|     |     BLOCK "{" 6.7.27 
+|     |     |     IF "if" 6.8.03 
+|     |     |     |     GT ">" 6.8.12  bool vreg
+|     |     |     |     |     IDENT "argi" 6.8.07  variable lval
+|     |     |     |     |     INTCON "1" 6.8.14  int const
+|     |     |     |     CALL "(" 6.8.22  void
+|     |     |     |     |     IDENT "putc" 6.8.17  void function
+|     |     |     |     |     CHARCON "' '" 6.8.23  char const
+|     |     |     CALL "(" 6.9.08  void
+|     |     |     |     IDENT "puts" 6.9.03  void function
+|     |     |     |     INDEX "[" 6.9.13 
+|     |     |     |     |     IDENT "argv" 6.9.09 
+|     |     |     |     |     IDENT "argi" 6.9.14 
+|     |     |     '=' "=" 6.10.08  vreg
+|     |     |     |     IDENT "argi" 6.10.03  variable lval
+|     |     |     |     '+' "+" 6.10.15 
+|     |     |     |     |     IDENT "argi" 6.10.10  variable lval
+|     |     |     |     |     INTCON "1" 6.10.17  int const
+|     CALL "(" 6.12.05  void
+|     |     IDENT "endl" 6.12.00  void function

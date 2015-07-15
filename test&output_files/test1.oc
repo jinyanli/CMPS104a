@@ -1,0 +1,30 @@
+/*struct node {
+ int foo; 
+  node link;
+  //string foo2; 
+  bar link2;
+ }
+
+node func (node head, int length) {
+   int a = 0; string b = ""; node c = new node();
+   if (a < 3) { int d = 8; a = length; c = c.link; }
+   else { string e = "";
+          if (0 == 0) { int f = 8; }
+                       else { int g = 9; }
+         }
+}
+
+node h = func (null, 10);
+
+int b=1;
+while (b==1) {
+   int e = 0; node f = new node();
+   
+}
+*/
+int func (int a, int b){
+a=1;
+b=2;
+a=c+b+2;
+return a;
+}

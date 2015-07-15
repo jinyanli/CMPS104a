@@ -1,0 +1,20 @@
+a (3.7.6) {0} int array variable lval 
+
+foo (3.9.0) {0} void prototype 
+
+
+
+foo (3.10.0) {0} void prototype 
+   a (3.10.10) {1} int variable param lval 
+
+
+
+foo (3.11.0) {0} void function 
+   a (3.11.13) {1} variable param lval 
+   b (3.11.22) {1} variable param lval 
+
+
+foo (3.12.7) {0} struct "foo" 
+  b (3.12.24) field {foo} int 
+  a (3.12.17) field {foo} int 
+

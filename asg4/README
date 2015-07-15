@@ -1,0 +1,19 @@
+Jinyan Li
+jli134@ucsc.edu
+assignment 4
+Files:
+auxlib.cc
+auxlib.h
+main.cc
+Makefile
+stringset.cc
+string.h
+scanner.l
+parse.y
+astree.cc
+astree.h
+lyutils.cc
+lyutils.h
+README
+
+//I only finish building symbol table for struct

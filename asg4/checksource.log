@@ -1,0 +1,3 @@
+checksource: line length > 72 characters
+   file "astree.cc~": 1 errors: line 854
+checksource: TOTAL COMPLAINTS: 1

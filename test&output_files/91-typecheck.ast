@@ -1,0 +1,130 @@
+ROOT "" 0.0.00 
+|     VARDECL "=" 3.7.08  variable lval
+|     |     ARRAY "[]" 3.7.03 
+|     |     |     INT "int" 3.7.00  int
+|     |     |     DECLID "a" 3.7.06 
+|     |     NULL "null" 3.7.10 
+|     VARDECL "=" 3.8.14  variable lval
+|     |     ARRAY "[]" 3.8.09 
+|     |     |     TYPEID "reference" 3.8.00 
+|     |     |     DECLID "a" 3.8.12 
+|     |     NEWARRAY "new" 3.8.16 
+|     |     |     STRING "string" 3.8.20 
+|     |     |     INTCON "10" 3.8.27 
+|     PROTOTYPE "" 3.9.00  
+|     |     VOID "void" 3.9.00  void
+|     |     |     DECLID "foo" 3.9.05  void function 
+|     |     PARAMLIST "(" 3.9.09 
+|     PROTOTYPE "" 3.10.00  
+|     |     VOID "void" 3.10.00  void
+|     |     |     DECLID "foo" 3.10.05  void function 
+|     |     PARAMLIST "(" 3.10.09 
+|     |     |     INT "int" 3.10.10  int
+|     |     |     |     DECLID "a" 3.10.14  int variable param lval
+|     FUNCTION "" 3.11.00  function
+|     |     VOID "void" 3.11.00  void
+|     |     |     DECLID "foo" 3.11.05  void function
+|     |     PARAMLIST "(" 3.11.09 
+|     |     |     ARRAY "[]" 3.11.13 
+|     |     |     |     INT "int" 3.11.10  variable param lval
+|     |     |     |     DECLID "a" 3.11.16 
+|     |     |     ARRAY "[]" 3.11.22 
+|     |     |     |     INT "int" 3.11.19  variable param lval
+|     |     |     |     DECLID "b" 3.11.25 
+|     |     BLOCK "{" 3.11.28 
+|     |     |     VARDECL "=" 3.11.35  variable lval
+|     |     |     |     INT "int" 3.11.29 
+|     |     |     |     |     DECLID "x" 3.11.33 
+|     |     |     |     '+' "+" 3.11.39 
+|     |     |     |     |     IDENT "a" 3.11.37 
+|     |     |     |     |     IDENT "b" 3.11.41 
+|     STRUCT "struct" 3.12.00  struct
+|     |     TYPEID "foo" 3.12.07 
+|     |     INT "int" 3.12.13  int field
+|     |     |     FIELD "a" 3.12.17 
+|     |     INT "int" 3.12.20  int field
+|     |     |     FIELD "b" 3.12.24 
+|     '+' "+" 3.14.02  vreg
+|     |     IDENT "a" 3.14.00  variable lval
+|     |     IDENT "b" 3.14.04  variable lval
+|     CALL "(" 3.15.02  void
+|     |     IDENT "f" 3.15.00  void function
+|     CALL "(" 3.16.02  void
+|     |     IDENT "f" 3.16.00  void function
+|     |     IDENT "x" 3.16.03  variable lval
+|     |     '+' "+" 3.16.07 
+|     |     |     IDENT "y" 3.16.06  variable lval
+|     |     |     INTCON "3" 3.16.08  int const
+|     |     IDENT "z" 3.16.11  variable lval
+|     '+' "+" 3.17.04  vreg
+|     |     IDENT "foo" 3.17.00  variable lval
+|     |     IDENT "bar" 3.17.06  variable lval
+|     '=' "=" 3.18.02  vreg
+|     |     IDENT "a" 3.18.00  variable lval
+|     |     '=' "=" 3.18.06 
+|     |     |     IDENT "b" 3.18.04  variable lval
+|     |     |     '=' "=" 3.18.10 
+|     |     |     |     IDENT "c" 3.18.08  variable lval
+|     |     |     |     IDENT "d" 3.18.12  variable lval
+|     '=' "=" 3.19.05  vreg
+|     |     IDENT "test" 3.19.00  variable lval
+|     |     '+' "+" 3.19.17 
+|     |     |     '+' "+" 3.19.11 
+|     |     |     |     IDENT "abc" 3.19.07  variable lval
+|     |     |     |     IDENT "def" 3.19.13  variable lval
+|     |     |     IDENT "ghi" 3.19.19  variable lval
+|     '+' "+" 3.20.14  vreg
+|     |     '+' "+" 3.20.05 
+|     |     |     IDENT "this" 3.20.00  variable lval
+|     |     |     '*' "*" 3.20.10 
+|     |     |     |     INTCON "23" 3.20.07  int const
+|     |     |     |     IDENT "a" 3.20.12  variable lval
+|     |     STRINGCON ""hello"" 3.20.16  string const
+|     WHILE "while" 3.21.00 
+|     |     LT "<" 3.21.09  bool vreg
+|     |     |     IDENT "a" 3.21.07  variable lval
+|     |     |     IDENT "b" 3.21.11  variable lval
+|     |     '=' "=" 3.21.16  vreg
+|     |     |     IDENT "f" 3.21.14  variable lval
+|     |     |     '+' "+" 3.21.20 
+|     |     |     |     IDENT "f" 3.21.18  variable lval
+|     |     |     |     INTCON "1" 3.21.22  int const
+|     RETURN "return" 3.22.00 
+|     |     '+' "+" 3.22.09  vreg
+|     |     |     INTCON "3" 3.22.07  int const
+|     |     |     INTCON "4" 3.22.11  int const
+|     '=' "=" 3.23.05  vreg
+|     |     INDEX "[" 3.23.01 
+|     |     |     IDENT "a" 3.23.00  variable lval
+|     |     |     IDENT "i" 3.23.02  variable lval
+|     |     INDEX "[" 3.23.08 
+|     |     |     IDENT "b" 3.23.07  variable lval
+|     |     |     IDENT "j" 3.23.09  variable lval
+|     RETURNVOID "return" 3.24.00 
+|     WHILE "while" 3.25.00 
+|     |     TRUE "true" 3.25.07 
+|     |     BLOCK "{" 3.25.13 
+|     |     |     '=' "=" 3.25.16  vreg
+|     |     |     |     IDENT "a" 3.25.14  variable lval
+|     |     |     |     INTCON "3" 3.25.18  int const
+|     |     |     '=' "=" 3.25.23  vreg
+|     |     |     |     IDENT "b" 3.25.21  variable lval
+|     |     |     |     INTCON "4" 3.25.25  int const
+|     IF "if" 3.26.00 
+|     |     EQ "==" 3.26.06  bool vreg
+|     |     |     IDENT "a" 3.26.04  variable lval
+|     |     |     IDENT "b" 3.26.09  variable lval
+|     |     CALL "(" 3.26.14  void
+|     |     |     IDENT "f" 3.26.12  void function
+|     |     |     IDENT "x" 3.26.15  variable lval
+|     IFELSE "if" 3.27.00 
+|     |     NE "!=" 3.27.06  bool vreg
+|     |     |     IDENT "a" 3.27.04  variable lval
+|     |     |     IDENT "b" 3.27.09  variable lval
+|     |     '=' "=" 3.27.14  vreg
+|     |     |     IDENT "y" 3.27.12  variable lval
+|     |     |     INTCON "3" 3.27.16  int const
+|     |     CALL "(" 3.27.26  void
+|     |     |     IDENT "f" 3.27.24  void function
+|     |     |     IDENT "y" 3.27.27  variable lval
+|     |     |     IDENT "z" 3.27.30  variable lval

@@ -1,0 +1,40 @@
+ROOT "" 0.0.00 
+|     VARDECL "=" 3.4.08  variable lval
+|     |     ARRAY "[]" 3.4.03 
+|     |     |     INT "int" 3.4.00  int
+|     |     |     DECLID "a" 3.4.06 
+|     |     NULL "null" 3.4.10 
+|     VARDECL "=" 3.5.08  variable lval
+|     |     ARRAY "[]" 3.5.03 
+|     |     |     INT "int" 3.5.00  int
+|     |     |     DECLID "b" 3.5.06 
+|     |     NULL "null" 3.5.10 
+|     VARDECL "=" 3.6.06  variable lval
+|     |     INT "int" 3.6.00  int
+|     |     |     DECLID "c" 3.6.04 
+|     |     '+' "+" 3.6.10 
+|     |     |     IDENT "a" 3.6.08 
+|     |     |     IDENT "b" 3.6.12 
+|     FUNCTION "" 3.7.04  function
+|     |     ARRAY "[]" 3.7.04 
+|     |     |     VOID "void" 3.7.00  function
+|     |     |     DECLID "f" 3.7.07 
+|     |     PARAMLIST "(" 3.7.08 
+|     |     BLOCK "{" 3.7.11 
+|     ';' ";" 3.7.13 
+|     VARDECL "=" 3.8.07  variable lval
+|     |     VOID "void" 3.8.00  void
+|     |     |     DECLID "n" 3.8.05 
+|     |     NULL "null" 3.8.09 
+|     VARDECL "=" 3.9.07  variable lval
+|     |     BOOL "bool" 3.9.00  bool
+|     |     |     DECLID "x" 3.9.05 
+|     |     LT "<" 3.9.11 
+|     |     |     IDENT "a" 3.9.09 
+|     |     |     IDENT "b" 3.9.13 
+|     VARDECL "=" 3.10.07  variable lval
+|     |     BOOL "bool" 3.10.00  bool
+|     |     |     DECLID "y" 3.10.05 
+|     |     EQ "==" 3.10.10 
+|     |     |     IDENT "a" 3.10.09 
+|     |     |     IDENT "b" 3.10.12 
