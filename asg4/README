@@ -16,4 +16,4 @@ lyutils.cc
 lyutils.h
 README
 
-//I only finish building symbol table for struct
+//I only finished building symbol table for struct
