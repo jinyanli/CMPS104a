@@ -16,4 +16,6 @@ lyutils.cc
 lyutils.h
 README
 
-//I only finished building symbol table for struct
+I finished building symbol table.
+Typing checking is partially working.
+
